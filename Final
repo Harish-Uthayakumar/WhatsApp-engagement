@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+
+
+<body>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a id="ff" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+
+
+<script type="text/javascript">
+	
+	var elem = document.getElementById("ff");
+	var currentlocation = window.location.href;
+	elem.setAttribute("href", "http://web.whatsapp.com/send?phone=917709090319&text=Hey, I was just checking out the following product "+currentlocation+"%0a%0aDo you have any special offers on it?%0a%0aThis request was generated using WhatsApp tool by Huloq");
+</script>
+
+<style>
+	.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+
+</style>
+
+</body>
+	
+</html>
