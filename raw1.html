@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Get current URL in JavaScript</title>
+
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+		var linktosend;
+		function getURL() {
+
+			
+			var str = "Click to send WhatsApp message";
+			var locationoflink = window.location.href;
+			 linktosend = "http://web.whatsapp.com/send?phone=917709090319&text=Hey, I was just checking out the following product "+locationoflink+"%0a%0aDo you have any special offers on it?%0a%0aThis request was generated using WhatsApp tool by Huloq";
+			var result = str.link(linktosend);
+			document.getElementById("demo1").innerHTML = result;
+			console.log(linktosend)
+
+	</script>
+	<script type="text/javascript">console.log(linktosend)</script>
+
+	
+	<button type="button" onclick="getURL();">Get Page URL</button>
+	<img id="demo1" src="https://res.cloudinary.com/dxafjfxod/image/upload/v1567597636/WhatsAppr/banner_jhebut.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 200px; width: 50%;" title="Share on WhatsApp" alt="Share on WhatsApp"></a>
+<script>
+	
+	var img = new Image();
+	var locationoflink = window.location.href;
+img.src = 'https://res.cloudinary.com/dxafjfxod/image/upload/v1567597636/WhatsAppr/banner_jhebut.png';
+img.onclick = function() {
+    window.location.href = "http://web.whatsapp.com/send?phone=917709090319&text=Hey, I was just checking out the following product "+locationoflink+"%0a%0aDo you have any special offers on it?%0a%0aThis request was generated using WhatsApp tool by Huloq";
+};
+document.body.appendChild(img);
+</script>
+<div id="td-product-detail"></div>
+
+<script>
+	
+	var linkElement = document.createElement('a');
+linkElement.href = "http://web.whatsapp.com/send?phone=917709090319&text=Hey, I was just checking out the following product "+locationoflink+"%0a%0aDo you have any special offers on it?%0a%0aThis request was generated using WhatsApp tool by Huloq";
+
+var locationoflink = window.location.href;
+var elem = document.createElement("img");
+elem.setAttribute("src", "http://freephotos.online/wp-content/uploads/50208-abstract-banner.jpg");
+elem.setAttribute("alt", "Doručení s vyzkoušením");
+
+//this it the part of the DOM api I'm guessing you weren't aware of
+linkElement.appendChild(elem);
+
+document.getElementById("td-product-detail").appendChild(linkElement);
+</script>
+	
+</body>
+</html>
